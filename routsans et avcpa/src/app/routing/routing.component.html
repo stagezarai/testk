@@ -1,0 +1,31 @@
+<div class="container-fluid">
+<h3>partie2</h3>
+<div class="row d-flex justify-content-center">
+    <button type="button" class="btn btn-link"(click)="redc()">go to features</button>
+</div>
+<div class="row"*ngIf="true" style="background-color:pink ; border:1px solid;">
+    <div class="col-nd-3">
+    <h3>welcome:{{userneme}}</h3>
+</div>
+</div>
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>name</th>
+            <th>code</th>
+            <th>country</th>
+        </tr>
+        <tr *ngFor="let item of datList">
+            <td><strong>{{item.name}}</strong></td>
+            <td>{{item.code}}</td>
+            <td>{{item.country}}</td>
+        </tr>
+    </table>
+</div>
+<div class="row">
+    <div [ngSwitch]="name">
+        <div *ngSwitchCase="'nouhe'">hey nouhe</div>
+        <div *ngSwitchCase="'yassmin'">hey yamin</div>
+        <div *ngSwitchCase="'klll'">hey fgfg</div>
+    </div>
+</div>
